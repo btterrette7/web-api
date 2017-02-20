@@ -1,0 +1,1 @@
+SELECT * FROM resume_king_schema.resume;

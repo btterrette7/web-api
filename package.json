@@ -1,0 +1,29 @@
+{
+  "name": "web-api",
+  "version": "1.0.0",
+  "description": "This is the web API for the Resume Kings App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Web",
+    "API",
+    "Resume"
+  ],
+  "author": "ResumeKings",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.7.11",
+    "body-parser": "^1.15.2",
+    "cors": "^2.8.1",
+    "express": "^4.14.0",
+    "helmet": "^3.1.0",
+    "multer": "^1.2.0",
+    "mysql": "^2.12.0",
+    "sequelize": "^3.27.0"
+  },
+  "devDependencies": {
+    "body-parser": "^1.15.2"
+  }
+}
