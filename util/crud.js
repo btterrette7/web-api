@@ -143,7 +143,7 @@ var api = function (router, name, model, options) {
 		var ResumeOverlay="http://s3.amazonaws.com/" + config.S3.bucket + "/" + req.body.Id+"ResumeOverlay.png";
 		//console.log(profile);
 		
-		model.create({"Id": req.body.Id, "Name": req.body.Name,"Email": req.body.Email,"Number": req.body.Number,"Notes": req.body.Notes,"Resume": resume,"Profile": profile,"ResumeOverlay": "empty", "Rating": req.body.Rating}).then((results) => {
+		model.create({"Id": req.body.Id, "Name": req.body.Name,"Email": req.body.Email,"Number": req.body.Number,"Notes": req.body.Notes,"Resume": resume,"Profile": profile,"ResumeOverlay": ResumeOverlay, "Rating": req.body.Rating}).then((results) => {
 		
 			resume="http://s3.amazonaws.com/" + config.S3.bucket + "/" + results.Id+"Resume.png";
 			profile="http://s3.amazonaws.com/" + config.S3.bucket + "/" + results.Id+"Profile.png";
