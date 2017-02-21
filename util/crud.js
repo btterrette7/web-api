@@ -149,7 +149,7 @@ var api = function (router, name, model, options) {
 			profile="http://s3.amazonaws.com/" + config.S3.bucket + "/" + results.Id+"Profile.png";
 			ResumeOverlay="http://s3.amazonaws.com/" + config.S3.bucket + "/" + req.body.Id+"ResumeOverlay.png";
 			
-			model.update({"Id": results.Id, "Name": results.Name,"Email": results.Email,"Number": results.Number,"Notes": results.Notes,"Resume": resume,"Profile": profile,"ResumeOverlay": "empty", "Rating": results.Rating}, {
+			model.update({"Id": results.Id, "Name": results.Name,"Email": results.Email,"Number": results.Number,"Notes": results.Notes,"Resume": resume,"Profile": profile,"ResumeOverlay": ResumeOverlay, "Rating": results.Rating}, {
             where: {
               Id: results.Id
             }
