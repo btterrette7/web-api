@@ -27,24 +27,7 @@ module.exports = function (sequelize, DataTypes) {
 	    Notes: {
       field: 'notes',
       type: DataTypes.STRING(10000),
-      allowNull: false,
-    },
-      // Resume Picture
-	    Resume: {
-      field: 'resume',
-      type: DataTypes.STRING(2000),
-      allowNull: false,
-    },
-    // Profile Picture
-		Profile: {
-      field: 'picture',
-      type: DataTypes.STRING(2000),
-      allowNull: false,
-    },
-	ResumeOverlay: {
-      field: 'ResumeOverlay',
-      type: DataTypes.STRING(2000),
-      allowNull: false,
+      allowNull: true,
     },
 		Rating: {
       field: 'rating',
