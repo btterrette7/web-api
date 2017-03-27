@@ -153,7 +153,7 @@ var api = function (router, name, model, options) {
 			});}
 			
 			if(req.body.ResumeOverlay!=null){
-				uploadToS3(req.body.Id+"ResumeOverlay.png", req.body.ResumeOverlay).then((response) => {
+				uploadToS3(results.Id+"ResumeOverlay.png", req.body.ResumeOverlay).then((response) => {
 				//console.log('Finished uploading!', response);
 				//res.json(response);
 			});
